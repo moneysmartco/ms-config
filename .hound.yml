@@ -1,0 +1,5 @@
+ruby:
+  config_file: .rubocop.yml
+
+slim_lint:
+  enabled: true
