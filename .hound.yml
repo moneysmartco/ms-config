@@ -6,3 +6,6 @@ haml:
 
 slim_lint:
   enabled: true
+
+scss:
+  config_file: .scss-lint.yml
