@@ -5,7 +5,7 @@ haml:
   config_file: .haml-lint.yml
 
 slim_lint:
-  enabled: true
+  config_file: .slim-lint.yml
 
 scss:
   config_file: .scss-lint.yml
