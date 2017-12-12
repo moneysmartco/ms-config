@@ -298,7 +298,7 @@ Layout/MultilineMethodCallIndentation:
 Style/NumericLiterals:
   Description: Add underscores to large numeric literals to improve their readability.
   StyleGuide: https://github.com/bbatsov/ruby-style-guide#underscores-in-numerics
-  Enabled: false
+  Enabled: true
   MinDigits: 5
 
 Style/ParenthesesAroundCondition:
