@@ -46,6 +46,8 @@ Layout/AlignParameters:
   SupportedStyles:
   - with_first_parameter
   - with_fixed_indentation
+  Exclude:
+  - spec/**/*
 
 Style/AndOr:
   Description: Use &&/|| instead of and/or.
