@@ -9,3 +9,6 @@ slim_lint:
 
 scss:
   config_file: .scss-lint.yml
+
+credo:
+  enabled: true
