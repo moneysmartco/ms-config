@@ -12,3 +12,6 @@ scss:
 
 credo:
   enabled: true
+
+jshint:
+  config_file: .jshintrc
