@@ -230,7 +230,6 @@ Style/IfUnlessModifier:
   Description: Favor modifier if/unless usage when you have a single-line body.
   StyleGuide: https://github.com/bbatsov/ruby-style-guide#if-as-a-modifier
   Enabled: false
-  MaxLineLength: 100
 
 Layout/IndentationWidth:
   Description: Use 2 spaces for indentation.
@@ -492,7 +491,7 @@ Style/TrailingCommaInArguments:
   - consistent_comma
   - no_comma
 
-Style/TrailingCommaInLiteral:
+Style/TrailingCommaInArrayLiteral:
   Description: 'Checks for trailing comma in array and hash literals.'
   StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#no-trailing-array-commas'
   Enabled: false
@@ -501,6 +500,16 @@ Style/TrailingCommaInLiteral:
   - comma
   - consistent_comma
   - no_comma
+
+  Style/TrailingCommaInHashLiteral:
+    Description: 'Checks for trailing comma in array and hash literals.'
+    StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#no-trailing-array-commas'
+    Enabled: false
+    EnforcedStyleForMultiline: no_comma
+    SupportedStylesForMultiline:
+    - comma
+    - consistent_comma
+    - no_comma
 
 Style/TrivialAccessors:
   Description: Prefer attr_* methods to trivial readers/writers.
@@ -541,7 +550,6 @@ Style/WhileUntilModifier:
   Description: Favor modifier while/until usage when you have a single-line body.
   StyleGuide: https://github.com/bbatsov/ruby-style-guide#while-as-a-modifier
   Enabled: false
-  MaxLineLength: 100
 
 Style/WordArray:
   Description: Use %w or %W for arrays of words.
@@ -616,7 +624,7 @@ Lint/AssignmentInCondition:
   Enabled: true
   AllowSafeAssignment: true
 
-Lint/EndAlignment:
+Layout/EndAlignment:
   Description: Align ends correctly.
   Enabled: true
   EnforcedStyleAlignWith: keyword
@@ -624,7 +632,7 @@ Lint/EndAlignment:
   - keyword
   - variable
 
-Lint/DefEndAlignment:
+Layout/DefEndAlignment:
   Description: Align ends corresponding to defs correctly.
   Enabled: true
   EnforcedStyleAlignWith: start_of_line
@@ -1114,11 +1122,11 @@ Lint/AmbiguousRegexpLiteral:
     invocation without parenthesis.
   Enabled: false
 
-Lint/BlockAlignment:
+Layout/BlockAlignment:
   Description: Align block ends correctly.
   Enabled: true
 
-Lint/ConditionPosition:
+Layout/ConditionPosition:
   Description: Checks for condition placed in a confusing position relative to the
     keyword.
   StyleGuide: https://github.com/bbatsov/ruby-style-guide#same-line-condition
