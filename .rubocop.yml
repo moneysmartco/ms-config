@@ -501,15 +501,15 @@ Style/TrailingCommaInArrayLiteral:
   - consistent_comma
   - no_comma
 
-  Style/TrailingCommaInHashLiteral:
-    Description: 'Checks for trailing comma in array and hash literals.'
-    StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#no-trailing-array-commas'
-    Enabled: false
-    EnforcedStyleForMultiline: consistent_comma
-    SupportedStylesForMultiline:
-    - comma
-    - consistent_comma
-    - no_comma
+Style/TrailingCommaInHashLiteral:
+  Description: 'Checks for trailing comma in array and hash literals.'
+  StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#no-trailing-array-commas'
+  Enabled: false
+  EnforcedStyleForMultiline: consistent_comma
+  SupportedStylesForMultiline:
+  - comma
+  - consistent_comma
+  - no_comma
 
 Style/TrivialAccessors:
   Description: Prefer attr_* methods to trivial readers/writers.
